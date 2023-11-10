@@ -40,7 +40,8 @@ Wir machen eine dynmaische Onepage Webseite, indem man sein Finanzbudget berechn
 
 ### 1.4 Diagramme
 
-✍️ Hier können Sie PAPs, Use Case- und Gantt-Diagramme oder Ähnliches einfügen.
+![image](https://github.com/Tagesmeister/Finanz-Webseite/assets/110892250/0d026970-434c-450b-9237-cddaa38c4aef)
+
 
 ## 2 Planen
 
