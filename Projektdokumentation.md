@@ -12,14 +12,19 @@ Gruppe: Pascal Oestrich, Stefan Jesenko
 
 ### 1.1 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+Wir machen eine dynmaische Onepage Webseite, indem man sein Finanzbudget berechnen lassen kann.
 
 ### 1.2 User Stories
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
+| 1    |     Muss            |  Funktionalität    | Als als User möchte, dass ich meine Finzen in Schreibfälder eintragen kann, damit das Programm meine Zahlen hat, um damit zu rechnen. |
+| 2  |        Muss         |  Funktionalität    |     Ich als User möchte, dass meine eingegebene Zahlen zusammen berechnet werden, sodass mein Budget ausgegeben wird.                               |
+| 3  |        Muss         |   Funktionalität   |     Ich als User möchte, dass die Webseite Dynamisch ist und beim Aufrufen immer ohne Zahlen erscheint, damit ich direkt meine Zahlen eingeben kann ohne sie zuerst zu löschen.                               |
+| 4  |         Muss        |  Qualität    |     Ich als User möchte, dass die Webseite schlicht und einfach gestaltet ist, damit ich ohne verwirung die Webseite verwenden kann.                               |
+| 5  |          Muss       |  Qualität    | Ich als User möchte, dass ich für jedes Konto ein eigenes Feld zum eingeben habe, damit ich alles ich im überblick behalten kann.                                   |
+| 6  |      Muss           |  Qualität     | Ich als User möchte, dass mein ausgerechneter Budget in einem eingenem Feld ausgegeben wird, damit das Resultat klar angezeigt wird.                                   |
+| 7  |      Muss           |  Rand     | Ich als User möchte, dass die Webseite dynamisch ist und somit mit Javascript erstellt wurde.                             |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 
