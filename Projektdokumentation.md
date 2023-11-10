@@ -18,7 +18,7 @@ Wir machen eine dynmaische Onepage Webseite, indem man sein Finanzbudget berechn
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |     Muss            |  Funktionalität    | Als als User möchte, dass ich meine Finzen in Schreibfälder eintragen kann, damit das Programm meine Zahlen hat, um damit zu rechnen. |
+| 1    |     Muss            |  Funktionalität    | Ich als User möchte, dass ich meine Finzen in Schreibfälder eintragen kann, damit das Programm meine Zahlen hat, um damit zu rechnen. |
 | 2  |        Muss         |  Funktionalität    |     Ich als User möchte, dass meine eingegebene Zahlen zusammen berechnet werden, sodass mein Budget ausgegeben wird.                               |
 | 3  |        Muss         |   Funktionalität   |     Ich als User möchte, dass die Webseite Dynamisch ist und beim Aufrufen immer ohne Zahlen erscheint, damit ich direkt meine Zahlen eingeben kann ohne sie zuerst zu löschen.                               |
 | 4  |         Muss        |  Qualität    |     Ich als User möchte, dass die Webseite schlicht und einfach gestaltet ist, damit ich ohne verwirung die Webseite verwenden kann.                               |
@@ -26,14 +26,18 @@ Wir machen eine dynmaische Onepage Webseite, indem man sein Finanzbudget berechn
 | 6  |      Muss           |  Qualität     | Ich als User möchte, dass mein ausgerechneter Budget in einem eingenem Feld ausgegeben wird, damit das Resultat klar angezeigt wird.                                   |
 | 7  |      Muss           |  Rand     | Ich als User möchte, dass die Webseite dynamisch ist und somit mit Javascript erstellt wurde.                             |
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 
 ### 1.3 Testfälle
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
+| 1.1  | Webseite aufgerufen / gestartet + Eingabefeld für Konto "Bank"            |    543     |      Die Zahl wird in das Feld eingetragen.             |
+| 2.1  |   Webseite aufgerufen / gestartet + Alle Zahlen in die Felder eingegeben          |   "Rechnen"      |     Das berechnete Budget erscheint im Budgetfeld.              |
+| 3.1  |    Webseite wird aufgerufen / gestartet        |   *nichts*     |      Die Webseite erscheint mit leeren Eingabefelder.             |
+| 4.1  | Webseite aufgerufen / gestartet         |    *nichts*     |    Die Eingabefelder erscheinen nacheinander / übereinander.            |
+| 5.1  | Webseite aufgerufen / gestartet            |    *nichts*     |      Die Eingabefelder mit der Beschriftung von jedem Konto erscheinen nacheinander / übereinander.             |
+| 6.1  |    Webseite wird aufgerufen / gestartet        |   Drücke den Button "Rechnen"     |      Das berechnete Budget wird in dem Budgetfeld ausgegeben.             |
+| 7.1  |    *nichts*         |   *nichts*     |      *Die Webseite ist mit Javascript erstellt worden.*             |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
