@@ -1,0 +1,12 @@
+body {
+    background-color: aqua;
+}
+h1{
+    text-align: center;
+}
+.parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
