@@ -9,4 +9,11 @@ h1{
     flex-direction: row;
     justify-content: space-between;
 }
+#earnList {
+    list-style-type: none; /* Removes the bullet points */
+}
+#disbursementList{
+    list-style-type: none;
+}
+
 
