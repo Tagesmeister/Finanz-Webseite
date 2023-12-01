@@ -5,7 +5,7 @@ Gruppe: Pascal Oestrich, Stefan Jesenko
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
 |    17.11.2023   | 0.0.1   | Heute haben wir begonnen zu realisieren. Inputs wurden gemacht. |
-|       | ...     |                                                              |
+|24.11.2023|0.2.0|Heute haben wir die zwei Inputs verbessert.|
 |       | 1.0.0   |                                                              |
 
 ## 1 Informieren
@@ -67,9 +67,9 @@ Wir haben uns entschieden das Prdukt umzusetzen wie geplant. Da wir das erste Ma
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
-| ...  |       |           |               |                   |
-
+| 1.A  |17.11.2023|Stefan&Pascal|1|1|
+| 1.B  |17.11.2023|Pascal|1.5|1|
+| 2.A  |17.11.2023|Stefan|1.5|2|
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
 ## 5 Kontrollieren
