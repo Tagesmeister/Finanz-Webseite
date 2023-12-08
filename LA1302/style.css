@@ -1,19 +1,110 @@
+/* Overall page styling */
 body {
-    background-color: aqua;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
-h1{
+
+h1 {
     text-align: center;
+    color: #333;
 }
+
 .parent-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 20px;
 }
-#earnList {
-    list-style-type: none; /* Removes the bullet points */
+
+/* Styling for the forms and lists */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-#disbursementList{
-    list-style-type: none;
+
+input[type="number"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 28%;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #4cae4c;
+}
+
+li {
+    background: #e7e7e7;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+/* Budget display styling */
+#budgetDisplay {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #28a745;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+}
+#calculateBudgetButton {
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #28a745; /* Ein angenehmes Grün */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Fügt einen subtilen Schatten hinzu */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#calculateBudgetButton:hover {
+    background-color: #218838; /* Etwas dunkleres Grün für den Hover-Effekt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stärkerer Schatten für den Hover-Effekt */
+}
+
+#earnList li:first-child,
+#disbursementList li:first-child {
+    visibility: hidden;
 }
 
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .parent-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

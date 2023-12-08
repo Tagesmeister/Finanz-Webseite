@@ -72,7 +72,6 @@ const addToDisbursementList = function(e){
         li_disburse.textContent = inputDisbursementsText.value + " " + inputDisbursements.value;
         disbursementList.appendChild(li_disburse);
 
-        // Leere die Eingabefelder
         inputDisbursements.value = '';
         inputDisbursementsText.value = '';
     }
