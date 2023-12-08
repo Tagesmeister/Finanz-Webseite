@@ -71,29 +71,23 @@ footer {
     color: white;
 }
 #calculateBudgetButton {
-    display: block;
-    width: 60%;
+    width: 30%; /* Reduced from 50% to 30% */
     margin: 20px auto;
-    padding: 15px;
-    font-size: 1.2em;
-    background-color: #28a745; /* Ein angenehmes Grün */
-    color: white;
+    display: block;
+    background-color: #007bff;
+    color: #fff;
     border: none;
+    padding: 10px 15px; /* Slightly less padding for a slimmer look */
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Fügt einen subtilen Schatten hinzu */
+    font-size: 1em; /* Adjusted for smaller button size */
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 #calculateBudgetButton:hover {
-    background-color: #218838; /* Etwas dunkleres Grün für den Hover-Effekt */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stärkerer Schatten für den Hover-Effekt */
+    background-color: #0056b3;
 }
 
-#earnList li:first-child,
-#disbursementList li:first-child {
-    visibility: hidden;
-}
 
 
 /* Responsive adjustments */
