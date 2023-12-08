@@ -6,7 +6,8 @@ Gruppe: Pascal Oestrich, Stefan Jesenko
 | ----- | ------- | ------------------------------------------------------------ |
 |    17.11.2023   | 0.0.1   | Heute haben wir begonnen zu realisieren. Inputs wurden gemacht. |
 |24.11.2023|0.2.0|Heute haben wir die zwei Inputs verbessert.|
-|       | 1.0.0   |                                                              |
+|01.12.2023| 0.5.0   |Heute haben wir die Webseite schöner gemacht und kleine Fehler behoben|
+|08.12.2023|1.0.0| Wir haben die Webseite nach all unseren Forgaben realisiert.|
 
 ## 1 Informieren
 
@@ -70,7 +71,13 @@ Wir haben uns entschieden das Prdukt umzusetzen wie geplant. Da wir das erste Ma
 | 1.A  |17.11.2023|Stefan&Pascal|1|1|
 | 1.B  |17.11.2023|Pascal|1.5|1|
 | 2.A  |17.11.2023|Stefan|1.5|2|
-✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
+| 2.B  |24.11.2023|Pascal|1.5|1.5|
+| 3.A  |24.11.2023|Stefan|2|1.5|
+| 4.A  |01.12.2023|Pascal|1.5|2|
+| 5.A  |01.12.2023|Stefan|1|1.5|
+| 6.A  |08.12.2023|Pascal&Stefan|2.5|2|
+
+
 
 ## 5 Kontrollieren
 
