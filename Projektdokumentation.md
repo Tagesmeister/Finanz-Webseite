@@ -8,6 +8,7 @@ Gruppe: Pascal Oestrich, Stefan Jesenko
 |24.11.2023|0.2.0|Heute haben wir die zwei Inputs verbessert.|
 |01.12.2023| 0.5.0   |Heute haben wir die Webseite schöner gemacht und kleine Fehler behoben|
 |08.12.2023|1.0.0| Wir haben die Webseite nach all unseren Forgaben realisiert.|
+|15.12.2023|1.0.0| Wir haben das CSS der Webseite fertig gestellt.|
 
 ## 1 Informieren
 
@@ -77,19 +78,7 @@ Wir haben uns entschieden das Prdukt umzusetzen wie geplant. Da wir das erste Ma
 | 5.A  |01.12.2023|Stefan|1|1.5|
 | 6.A  |08.12.2023|Pascal&Stefan|2.5|2|
 
-
-
-## 5 Kontrollieren
-
-| TC-№ | Datum | Resultat | Tester |
-| ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
-
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
-
-
-## 6  Portfolio
+## 5  Portfolio
 
 Pascal Oestrich:
 Stefan Jesenko
