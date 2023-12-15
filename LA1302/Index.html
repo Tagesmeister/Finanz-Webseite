@@ -4,35 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Budget Rechner</h1>
-<div class="parent-container">
+    <h1>Budget Rechner</h1>
+    <div class="parent-container">
+        <div id="formEarns">
+            <h3>Earnings</h3>
+            <li id="earnList"></li>
+        </div>
+        <div id="formDisbursements">
+            <h3>Cash disbursements </h3>
+            <li id="disbursementList"></li>
+        </div>
+    </div>
+    <button id="calculateBudgetButton">Budget berechnen</button>
+    <div id="budgetDisplay">Budget: $0.00</div>
 
-<div id="formEarns">
-<h3>Earnings</h3>
+    <footer>
+        <p>@ 2023 Copyright by Pascal Oestrich and Stefan Jesenko</p>
+    </footer>
 
-<li id="earnList">
-
-</li>
-</div>
-
-
-<div id="formDisbursements">
-<h3>Cash disbursements </h3>
-
-<li id="disbursementList">
-
-</li>
-</div>
-
-</div>
-
-<button id="calculateBudgetButton">Budget berechnen</button>
-<div id="budgetDisplay">Budget: $0.00</div>
-
-<footer>@ 2023 Copyright by Pascal Oestrich and Stefan Jesenko</footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

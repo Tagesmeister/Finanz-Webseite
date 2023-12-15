@@ -1,14 +1,37 @@
-/* Overall page styling */
-body {
-    background-color: #f4f4f4;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
+/* General Styles */
+html, body {
+    height: 100%; /* Ermöglicht es, die Höhe des Footers relativ zum gesamten Fenster zu bestimmen */
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* Ihr bisheriger Body-Style bleibt erhalten */
+}
+
+.content-wrapper {
+    flex: 1; /* Nimmt den verfügbaren Raum ein, drückt den Footer nach unten */
+    /* Hier können Sie Ihren weiteren Inhalt (außer Footer) einfügen */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #4A90E2; /* Soft blue for a fresh look */
 }
 
 .parent-container {
@@ -23,7 +46,12 @@ form {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 input[type="number"] {
@@ -36,23 +64,25 @@ input[type="number"] {
 
 input[type="submit"] {
     width: 28%;
-    background: #5cb85c;
+    background: #4CAF50;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
-    background: #4cae4c;
+    background: #45a049;
 }
 
 li {
-    background: #e7e7e7;
+    background: #f2f2f2;
     padding: 10px;
     margin: 5px 0;
     border-radius: 4px;
+    border-left: 5px solid #4A90E2;
 }
 
 /* Budget display styling */
@@ -70,16 +100,17 @@ footer {
     background: #333;
     color: white;
 }
+
 #calculateBudgetButton {
-    width: 30%; /* Reduced from 50% to 30% */
+    width: 30%;
     margin: 20px auto;
     display: block;
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 15px; /* Slightly less padding for a slimmer look */
+    padding: 10px 15px;
     border-radius: 5px;
-    font-size: 1em; /* Adjusted for smaller button size */
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -87,8 +118,6 @@ footer {
 #calculateBudgetButton:hover {
     background-color: #0056b3;
 }
-
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
