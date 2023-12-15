@@ -7,7 +7,7 @@ Gruppe: Pascal Oestrich, Stefan Jesenko
 |    17.11.2023   | 0.0.1   | Heute haben wir begonnen zu realisieren. Inputs wurden gemacht. |
 |24.11.2023|0.2.0|Heute haben wir die zwei Inputs verbessert.|
 |01.12.2023| 0.5.0   |Heute haben wir die Webseite schöner gemacht und kleine Fehler behoben|
-|08.12.2023|1.0.0| Wir haben die Webseite nach all unseren Forgaben realisiert.|
+|08.12.2023|0.6.0| Wir haben die Webseite nach all unseren Forgaben realisiert.|
 |15.12.2023|1.0.0| Wir haben das CSS der Webseite fertig gestellt.|
 
 ## 1 Informieren
