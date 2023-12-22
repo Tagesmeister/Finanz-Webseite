@@ -1,6 +1,5 @@
-/* General Styles */
 html, body {
-    height: 100%; /* Ermöglicht es, die Höhe des Footers relativ zum gesamten Fenster zu bestimmen */
+    height: 100%; 
     margin: 0;
     padding: 0;
 }
@@ -8,12 +7,11 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    /* Ihr bisheriger Body-Style bleibt erhalten */
+
 }
 
 .content-wrapper {
-    flex: 1; /* Nimmt den verfügbaren Raum ein, drückt den Footer nach unten */
-    /* Hier können Sie Ihren weiteren Inhalt (außer Footer) einfügen */
+    flex: 1; 
 }
 
 footer {
@@ -31,7 +29,7 @@ footer {
 
 h1 {
     text-align: center;
-    color: #4A90E2; /* Soft blue for a fresh look */
+    color: #4A90E2; 
 }
 
 .parent-container {
@@ -41,7 +39,6 @@ h1 {
     margin: 20px;
 }
 
-/* Styling for the forms and lists */
 form {
     background: #fff;
     padding: 20px;
