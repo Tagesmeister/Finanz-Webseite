@@ -91,7 +91,7 @@ Wir haben uns entschieden das Prdukt umzusetzen wie geplant. Da wir das erste Ma
 | 6.1  |  15.12.2023      |   OK       |   Pascal Oestrich     |
 | 7.1  |  15.12.2023      |     OK     |    Pascal Oestrich    |
 
-### Fazit
+### Fazit:
 Das Programm läuft optimal, alle Tests hatten ein positives ergebniss. Das Produkt ist fertig.
 
 ## 6  Portfolio
