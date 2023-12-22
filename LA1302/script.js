@@ -1,69 +1,126 @@
-const earningList =[
-    {
-        
-    }
-]
-
-let createFormElementEarning = function(parent){
-
+const createFormElementEarning = function(parent){
     const formEarning = document.createElement("form");
+    formEarning.id = "formEarning";
 
     const inputEarning = document.createElement("input");
-    inputEarning.setAttribute("class", "inputEarnings");
+    inputEarning.id = "inputEarning";
     inputEarning.setAttribute("type", "number");
     inputEarning.setAttribute("step","any")
     
     const submitEarning = document.createElement("input");
-    submitEarning.setAttribute("class","inputEarnings")
-    submitEarning.setAttribute("type","submit");
-    submitEarning.setAttribute("value","save");
+    submitEarning.setAttribute("type", "submit");
+    submitEarning.setAttribute("value", "Save");
 
-    formEarning.appendChild(inputEarning);
+    const submitEarningText = document.createElement("input");
+    submitEarningText.id = "submitEarningText";
+    submitEarningText.setAttribute("type","string");
+    
+    formEarning.appendChild(submitEarningText);
+    formEarning.appendChild(inputEarning); 
     formEarning.appendChild(submitEarning);
-
+    
     parent.appendChild(formEarning);
-}
-let createFormElementDisbursements = function(parent){
+};
 
-
+const createFormElementDisbursements = function(parent){
     const formDisbursements = document.createElement("form");
+    formDisbursements.id = "formDisbursements";
 
-    const inputFormDisbursements = document.createElement("input");
-    inputFormDisbursements.setAttribute("class","inputFormDisbursements");
-    inputFormDisbursements.setAttribute("type", "number");
+    const inputDisbursements = document.createElement("input");
+    inputDisbursements.id = "inputDisbursements";
+    inputDisbursements.setAttribute("type", "number");
 
-    const submitFormDisbursements = document.createElement("input");
-    submitFormDisbursements.setAttribute("class","inputFormDisbursements")
-    submitFormDisbursements.setAttribute("type", "submit");
-    submitFormDisbursements.setAttribute("value","save");
+    const submitDisbursements = document.createElement("input");
+    submitDisbursements.setAttribute("type", "submit");
+    submitDisbursements.setAttribute("value", "Save");
 
-    formDisbursements.appendChild(inputFormDisbursements);
-    formDisbursements.appendChild(submitFormDisbursements);
+    const submitDisbursementsText = document.createElement("input");
+    submitDisbursementsText.id = "submitDisbursementsText";
+    submitDisbursementsText.setAttribute("type","string");
 
+    formDisbursements.appendChild(submitDisbursementsText);
+    formDisbursements.appendChild(inputDisbursements);
+    formDisbursements.appendChild(submitDisbursements);
     parent.appendChild(formDisbursements);
+};
+//ChatGPT----------------------------------------------------------------------
+const addToEarnList = function(e){
+    e.preventDefault();
+    const inputEarning = document.getElementById("inputEarning");
+    const inputEarningText = document.getElementById("submitEarningText");
+
+    if (inputEarning.value) {
+        const earnList = document.getElementById("earnList"); 
+        const li_earn = document.createElement("li");
+        li_earn.textContent = inputEarningText.value + " " + inputEarning.value;
+        earnList.appendChild(li_earn);
+
+        inputEarning.value = '';
+        inputEarningText.value = '';
+    }
+   
+};
+
+const addToDisbursementList = function(e){
+    e.preventDefault();
+    const inputDisbursements = document.getElementById("inputDisbursements");
+    const inputDisbursementsText = document.getElementById("submitDisbursementsText");
+
+    if (inputDisbursements.value) {
+        const disbursementList = document.getElementById("disbursementList");
+        const li_disburse = document.createElement("li");
+        li_disburse.textContent = inputDisbursementsText.value + " " + inputDisbursements.value;
+        disbursementList.appendChild(li_disburse);
+
+        inputDisbursements.value = '';
+        inputDisbursementsText.value = '';
+    }
+};
+//----------------------------------------------------------------------------------------
+
+
+const calculateBudget = function(){
+const budget = calculateSumEarnings() - calculateSumDisbursement();
+
+outPutBudget(budget);
 }
-//ChatGPT--------------------------------------------------------------------
-const addToEarnList = function(event){
-    event.preventDefault();
-    let number = parseFloat(document.querySelector(".inputEarnings").value);
-    let earn = { number };
-    earningList.push(earn);
-    addListElement(earn, document.querySelector("#formEarns ul"));
+
+function calculateSumEarnings(){
+    const earnListItems = document.getElementById("earnList").children;
+    let sum = 0;
+    Array.from(earnListItems).forEach(function(item){
+        const value = parseFloat(item.textContent.split(" ")[1]);
+        if (!isNaN(value)) {
+            sum += value;
+        }
+    });
+    return sum;
 }
 
-const addListElement = function(earn, parent){
-    let li_earn = document.createElement("li");
-    li_earn.classList.add("earn");
-    li_earn.innerHTML = earn.number;
-    parent.appendChild(li_earn)
+function calculateSumDisbursement(){
+    const disbursementListItems = document.getElementById("disbursementList").children;
+    let sum = 0;
+    Array.from(disbursementListItems).forEach(function(item){
+        const value = parseFloat(item.textContent.split(" ")[1]);
+        if (!isNaN(value)) {
+            sum += value;
+        }
+    });
+    return sum;
 }
-//-----------------------------------------------------------------------------------
+function outPutBudget(budget){
+    document.getElementById('budgetDisplay').textContent = `Budget: $${budget.toFixed(2)}`;
+}
 
+const formEarnsParent = document.getElementById("formEarns");
+const formDisbursementsParent = document.getElementById("formDisbursements");
 
-const formEarns = document.getElementById("formEarns");
-const formDisbursements = document.getElementById("formDisbursements");
-createFormElementEarning(formEarns);
-createFormElementDisbursements(formDisbursements);
+const buttonToCalculate = document.getElementById("calculateBudgetButton");
 
-const formEarning = document.querySelector("#formEarns form");
-formEarning.addEventListener("submit", addToEarnList);
+createFormElementEarning(formEarnsParent);
+createFormElementDisbursements(formDisbursementsParent);
+
+formEarnsParent.addEventListener("submit", addToEarnList);
+formDisbursementsParent.addEventListener("submit", addToDisbursementList);
+
+buttonToCalculate.addEventListener("click", calculateBudget);
