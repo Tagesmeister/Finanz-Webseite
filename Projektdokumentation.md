@@ -97,4 +97,5 @@ Das Programm läuft optimal, alle Tests hatten ein positives ergebniss. Das Prod
 ## 6  Portfolio
 
 Pascal Oestrich: https://portfolio.bbbaden.ch/view/view.php?id=33265
+
 Stefan Jesenko
