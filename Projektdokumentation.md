@@ -83,11 +83,16 @@ Wir haben uns entschieden das Prdukt umzusetzen wie geplant. Da wir das erste Ma
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  |   15.12.2023    |     OK     |    Pascal Oestrich    |
+| 2.1 |  15.12.2023      |    OK      |    Pascal Oestrich    |
+| 3.1  |  15.12.2023      |   OK       |    Pascal Oestrich    |
+| 4.1  |  15.12.2023      |    OK      |    Pascal Oestrich    |
+| 5.1  |  15.12.2023      |   OK       |     Pascal Oestrich   |
+| 6.1  |  15.12.2023      |   OK       |   Pascal Oestrich     |
+| 7.1  |  15.12.2023      |     OK     |    Pascal Oestrich    |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
-
+### Fazit
+Das Programm läuft optimal, alle Tests hatten ein positives ergebniss. Das Produkt ist fertig.
 
 ## 6  Portfolio
 
